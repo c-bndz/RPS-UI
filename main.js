@@ -42,8 +42,14 @@ function playRound(humanChoice) {
     
     if (humanScore === 5) {
         message += "You won the match"
+        rockBtn.disabled = true;
+        paperBtn.disabled = true;
+        scissorsBtn.disabled = true;
     } else if (computerScore === 5) {
         message += "You lose the match, computer got the best of you."
+        rockBtn.disabled = true;
+        paperBtn.disabled = true;
+        scissors.disabled = true;
     }
     
     display.textContent = message
