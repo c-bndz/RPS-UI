@@ -60,3 +60,16 @@ paperBtn.addEventListener("click", function() {
 scissorsBtn.addEventListener("click", function() {
     playRound("scissors")
 })
+
+const resetBtn = document.querySelector("#reset")
+
+resetBtn.addEventListener("click", function() {
+    humanScore = 0;
+    computerScore = 0;
+    
+    rockBtn.disabled = false;
+    paperBtn.disabled = false;
+    scissorsBtn.disabled = false;
+    
+    display.textContent = "Game was reset. Please select your option of Rock, Paper, or Scissors!"
+})
